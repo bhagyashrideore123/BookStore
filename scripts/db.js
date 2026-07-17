@@ -239,7 +239,7 @@ let books = [
         ],
     },
     {
-        name: "Little Cloud",
+        name: "Goodnight, Little Cloud",
         path: "./assets/img/books/book5.png",
         author: "Sarah Jenkins",
         likes: 3100,
@@ -258,7 +258,7 @@ let books = [
         ],
     },
     {
-        name: "Mystery of Missing Toy",
+        name: "The Mystery of The Missing Toy",
         path: "./assets/img/books/book6.png",
         author: "David Clues",
         likes: 1540,

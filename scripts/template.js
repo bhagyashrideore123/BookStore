@@ -20,29 +20,16 @@ function bookCardTemplate(i) {
                     <td>
                         <p class="boldFont">${books[i].price}</p>
                     </td>
-                    <td>
-                        <p class="boldFont">${books[i].likes}</p>
-                    </td>
-                    <td>
-                        <button onclick="likeTheBook(${i})">
-                            <img id="likeImg" src=${likeImgPath} alt="status_of_book">
-                        </button>
+                    <td class="priceStyle">
+                        <span class="priceStyle">
+                                <p class="boldFont">${books[i].likes}</p>
+                                <button onclick="likeTheBook(${i})">
+                                    <img id="likeImg" src=${likeImgPath} alt="status_of_book">
+                                </button>
+                        </span>
                     </td>
                 </tr>
-            </table>
-        
-            <!-- <img class="bookImg" src=${books[i].path} alt=${books[i].name}>
-            <div class="flexDivRow priceLikesStyle">
-                <p class="boldFont">${books[i].price}</p>
-                <div class="flexDivRow">
-                    <p class="boldFont">${books[i].likes}</p>
-                    <button onclick="likeTheBook(${i})">
-                        <img id="likeImg" src=${likeImgPath} alt="status_of_book">
-                    </button>
-                </div>
-            </div>   -->
-            <table>
-                <tr>
+                <tr class="marginTop">
                     <td>
                         <p class="boldFont">Author : </p>
                     </td>
