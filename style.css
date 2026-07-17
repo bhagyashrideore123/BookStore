@@ -1,0 +1,149 @@
+.heroSection {
+    width: 100%;
+    padding-top: 250px;
+    padding-bottom: 500px;
+    border-bottom: 5px solid var(--sections-border-bottom);
+    background: url(./assets/img/bg/bg1.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 60%;   
+    background-size: cover;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;   
+}
+
+.bookCard {
+    background-color: var(--white-card);
+    padding: 20px;
+    color: var(--text-color);
+    border-radius: 15px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 700px;
+    box-shadow: 3px 3px 27px 4px rgba(0, 0, 0, 0.27);
+    border-radius: 20px;
+}
+
+.cardStyle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookImg {
+    height: 49%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.boldFont{
+font-weight: bold;
+}
+.sentImg {
+    height: 30px;
+    width: 30px
+}
+
+.inputStyle {
+    border: none;
+    appearance: none;
+    padding: 8px;
+    color: var(--assets-color);
+    border-bottom: 2px solid var(--assets-color);
+    flex: 1;
+}
+
+.inputStyle::placeholder {
+    color: var(--assets-color);
+}
+
+.inputStyle:focus::placeholder {
+    /* color: transparent; */
+    border: none;
+}
+
+.flexDivRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin:10px 0px;
+
+}
+.priceLikesStyle{
+    background-color: var(--secondary-color-opacity);
+    padding: 0px 5px;
+}
+
+.flexDivCol {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.commentHeadingStyle{
+    color: var(--assets-color);
+    margin: 10px;
+}
+
+.overflowText {
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.logo {
+    width: 100%;
+    height: 80px;
+    text-align: left;
+}
+
+.underBorder {
+    border-bottom: 5px solid var(--sections-border-bottom);
+}
+
+.categoryWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 20px;
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: var(--white-card);
+        box-shadow: 3px 3px 27px 4px rgba(0, 0, 0, 0.27);
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
+
+.commentBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        padding: 10px;
+        background-color: var(--primary-color);
+}
+
+.headingPlacement{
+    position: absolute;
+    top: 20px;
+}

@@ -1,0 +1,84 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/roboto-v51-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/roboto-v51-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/roboto-v51-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    scroll-behavior: smooth;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+   
+}
+header{
+    height: 80px;
+    background-color: var( --secondary-color);  
+    border-bottom: 5px solid var(--sections-border-bottom);
+}
+main{
+    min-height: calc(100dvh - 160px);
+    background: var(--bg-color);
+}
+footer{
+    height: 80px;
+    background-color: var( --secondary-color);
+    color:var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid var(--sections-border-bottom);
+}
+
+h1{
+    font-size: clamp(16px,5dvw,32px);
+    color: var( --text-color);
+    text-align: center;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgb(0 0 0 / 84%), 5px 5px 2px rgb(247 231 231 / 0%);
+}
+h2{
+    font-size: clamp(16px,5dvw,25px);
+    text-align: center;
+    color: var( --text-color);
+    padding: 30px 10px 0px;
+}
+h3{
+    font-size: clamp(16px,5dvw,25px);
+    color: var( --text-color);
+    text-align: center;
+}
+p{
+    font-size: clamp(16px,5dvw,16px); 
+    color: var(--text-color);
+}
+button{
+    border: none;
+    outline: none;
+    color: none;
+    background: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance:none
+}
