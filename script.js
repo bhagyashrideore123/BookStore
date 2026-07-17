@@ -31,9 +31,20 @@ function renderComments(index) {
     return allComments;
 }
 
-function sendComments(i) {
-    const value = inputComments.value;
-    console.log(value)
+function getComment(index) {
+    let userComment = document.getElementById(`inputComments-${index}`);
+    return userComment.value;
+}
+
+function sendComments(index) {
+    console.log(index);
+    if (getComment(index) == "") {
+        document.getElementById(`inputComments-${index}`).style.border = "1px solid red";
+        return;
+    }
+    books[index].comments.push({ "name": user, "comment": getComment(index) });
+    localStorage.setItem("books", JSON.stringify(books));
+    renderBooks();
 }
 
 function likeTheBook(index) {

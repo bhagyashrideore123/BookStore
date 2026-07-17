@@ -1,7 +1,6 @@
 .heroSection {
     width: 100%;
-    padding-top: 250px;
-    padding-bottom: 500px;
+    padding: clamp(100px, calc(57.143px + 13.393vw), 250px) 0 clamp(80px, calc(-40px + 37.5vw), 500px);
     border-bottom: 5px solid var(--sections-border-bottom);
     background: url(./assets/img/bg/bg1.png);
     background-repeat: no-repeat;
@@ -25,13 +24,18 @@
     height: 700px;
     box-shadow: 3px 3px 27px 4px rgba(0, 0, 0, 0.27);
     border-radius: 20px;
+    tbody{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .cardStyle {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 40px 10px;
+    padding: 40px 20px;
     justify-content: center;
     align-items: center;
 }
@@ -68,17 +72,17 @@ font-weight: bold;
     border: none;
 }
 
-.flexDivRow {
+/* .flexDivRow {
     display: flex;
     justify-content: space-between;
     gap: 10px;
     align-items: center;
     margin:10px 0px;
 
-}
+} */
 .priceLikesStyle{
     background-color: var(--secondary-color-opacity);
-    padding: 0px 5px;
+    padding: 0px 20px;
 }
 
 .flexDivCol {
@@ -94,7 +98,7 @@ font-weight: bold;
 
 .overflowText {
     overflow: auto;
-    scrollbar-width: none;
+    scrollbar-width: thin;
 }
 
 .logo {

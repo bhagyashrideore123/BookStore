@@ -7,8 +7,31 @@ function bookCardTemplate(i) {
 
     return /*html*/ `
         <div class="bookCard">
-            <h2>${books[i].name}</h2>
-            <img class="bookImg" src=${books[i].path} alt=${books[i].name}>
+            <table>
+                <thead>
+                    <h2>${books[i].name}</h2>
+                </thead>
+                <tr>
+                    <td>
+                        <img class="bookImg" src=${books[i].path} alt=${books[i].name}>
+                    </td>
+                </tr>
+                <tr class="priceLikesStyle">
+                    <td>
+                        <p class="boldFont">${books[i].price}</p>
+                    </td>
+                    <td>
+                        <p class="boldFont">${books[i].likes}</p>
+                    </td>
+                    <td>
+                        <button onclick="likeTheBook(${i})">
+                            <img id="likeImg" src=${likeImgPath} alt="status_of_book">
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        
+            <!-- <img class="bookImg" src=${books[i].path} alt=${books[i].name}>
             <div class="flexDivRow priceLikesStyle">
                 <p class="boldFont">${books[i].price}</p>
                 <div class="flexDivRow">
@@ -17,7 +40,7 @@ function bookCardTemplate(i) {
                         <img id="likeImg" src=${likeImgPath} alt="status_of_book">
                     </button>
                 </div>
-            </div>  
+            </div>   -->
             <table>
                 <tr>
                     <td>
@@ -50,10 +73,12 @@ function bookCardTemplate(i) {
                 ${renderComments(i)}
                 </table>
                 <div class="flexDivRow">
-                    <input id="inputComments"  class="inputStyle" type="text" placeholder="Write your comments here ...">
-                    <button id="sentComments" onclick="sendComments(i)"><img class="sentImg" src="./assets/img/sent_icon.svg" alt="sent_button_image"></button>
+                    <input id="inputComments-${i}"  class="inputStyle" type="text" placeholder="Write your comments here ...">
+                    <button id="sentComments" onclick="sendComments(${i})"><img class="sentImg" src="./assets/img/sent_icon.svg" alt="sent_button_image"></button>
                 </div>
-            </section> `;
+            </section> 
+    </div>`;
+   
 }
 
 function getComments(index, y) {
@@ -65,8 +90,7 @@ function getComments(index, y) {
     `;
 }
 
-function showUsersComments(comment)
-{
+function showUsersComments(comment) {
     return /*html*/ `
         <div class="commentBox">
             <p class="boldFont">${user}</p>

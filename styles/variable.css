@@ -4,7 +4,7 @@
     --assets-color:rgb(46 163 200);
     --input-background:rgb(133 176 189 / 17%);
     --sections-border-bottom: #2d31424a;
-    /* extra colors */
+    --max-width:1440px;
     --bg-color: #f6ead2;
     --text-color: #2D3142;
     --primary-color: #4ea8de30;
