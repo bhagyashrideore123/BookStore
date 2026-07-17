@@ -25,7 +25,8 @@
         </section>
         <main>
             <h2> OUR BOOK SHELF </h2>
-            <section id="books" class="cardStyle"></section>
+            <section id="books" class="cardStyle" aria-haspopup="dialog" aria-controls="BookModalBox"></section>
+            <dialog id="BookModalBox" onclick="preventEventBubbling(event)" class="dailogStyle"></dialog>
         </main>
         <footer>
             <p>©2026 Reading Rabbit: Made with 💛 for little readers.</p>

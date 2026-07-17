@@ -102,3 +102,87 @@ button{
     -moz-appearance: none;
     appearance:none
 }
+
+
+/* dialog */
+.direction_arrow
+{
+    height: 60px;
+    width: 60px;
+    background-color: var(--arrow) ;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+}
+dialog
+{
+    background-color: var(--white-card);
+    border-radius: 40px;
+    padding: 53px 64px;
+    gap: 48px;
+    border: none;
+    width: 50%;
+    position: fixed;
+    margin: auto;    
+    img
+    {
+        height: 375px;
+        width: 100%;
+        object-fit: contain;
+    }
+    .imgDialog
+    {           
+        height: 21px;
+        width: 25px;
+    }
+    button
+    {
+        appearance: none;
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+    }
+}
+
+dialog::backdrop
+{
+    background: var(--opacity-color);
+}
+
+.dialogHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    button
+    {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+}
+
+.dialogFooter
+{
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    padding-top: 40px;
+    align-items: center;
+    button
+    {
+        background-color: var(--arrowWithOpacity);
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+    }
+    button:hover
+    {
+        background-color: var(--arrowHover);
+    }    
+}

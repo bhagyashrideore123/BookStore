@@ -13,7 +13,7 @@ function bookCardTemplate(i) {
                 </thead>
                 <tr>
                     <td>
-                        <img class="bookImg" src=${books[i].path} alt=${books[i].name}>
+                        <img onclick="openModal(${i})" class="bookImg" src=${books[i].path} alt=${books[i].name}>
                     </td>
                 </tr>
                 <tr class="priceLikesStyle">
@@ -65,7 +65,6 @@ function bookCardTemplate(i) {
                 </div>
             </section> 
     </div>`;
-   
 }
 
 function getComments(index, y) {
@@ -84,4 +83,26 @@ function showUsersComments(comment) {
             <p>${comment}</p>
         </div>
     `;
+}
+
+function renderDialog(index) {
+    return /*html*/ `
+        <section class="dialogHeader">
+            <p id="dialogTitle">${books[index].name}</p>
+            <button tabindex="0" onkeyup="onKeyUpClose(event)"> 
+                <img tabindex="0" class="imgDialog" src="./assets/img/close.svg" alt="close" onclick="closeModal()"/>
+            </button>
+        </section>
+        <section class="flexstyle">
+            <div tabindex=0 id="backwardDiv" class="direction_arrow">
+                <button  id="backward"> <img class="imgDialog" src="./assets/img/Arrow-left.svg" onclick="gobackward(${index})" alt="previous_photo" /></button>
+            </div>
+            <img src=${books[index].path} alt=${books[index].name}/>
+            <div tabindex=0 id="forwardDiv" class="direction_arrow">
+                <button  id="forward" > <img class="imgDialog" src="./assets/img/Arrow-Right.svg" onclick="goForward(${index})"  alt="next_photo" /></button>
+            </div>
+        </section>
+        <section class="dialogFooter">
+            <p>${books[index].description}</p>
+        </section>`;
 }

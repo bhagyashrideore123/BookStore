@@ -1,9 +1,7 @@
 const user = "me";
 const booksRef = document.getElementById("books");
-// const inputComments = document.getElementById("inputComments");
+const modalRef = document.getElementById("BookModalBox");
 const sentComments = document.getElementById("sentComments");
-// const usersComments_table = document.getElementById("comments_table");
-// const categories = document.getElementById("categories");
 
 function renderBooks() {
     booksRef.innerHTML = "";
@@ -37,12 +35,12 @@ function getComment(index) {
 }
 
 function sendComments(index) {
-    console.log(index);
     if (getComment(index) == "") {
-        document.getElementById(`inputComments-${index}`).style.border = "1px solid red";
+        document.getElementById(`inputComments-${index}`).style.border =
+            "1px solid red";
         return;
     }
-    books[index].comments.push({ "name": user, "comment": getComment(index) });
+    books[index].comments.push({ name: user, comment: getComment(index) });
     localStorage.setItem("books", JSON.stringify(books));
     renderBooks();
 }
@@ -60,4 +58,43 @@ function likeTheBook(index) {
     }
     localStorage.setItem("books", JSON.stringify(books));
     renderBooks();
+}
+
+function openModal(index) {
+    if (index < books.length) {
+        modalRef.innerHTML = renderDialog(index);
+        modalRef.showModal();
+    } else {
+        index = 0;
+        modalRef.innerHTML = renderDialog(index);
+        modalRef.showModal();
+    }
+}
+
+function goForward(index) {
+    if (index >= 0 && index < books.length - 1) {
+        index++;
+        openModal(index);
+    } else {
+        index = 0;
+        openModal(index);
+    }
+}
+
+function gobackward(index) {
+    if (index == 0) {
+        index = books.length - 1;
+        openModal(index);
+    } else {
+        index--;
+        openModal(index);
+    }
+}
+
+function preventEventBubbling(event) {
+    event.stopPropagation();
+}
+
+function closeModal() {
+    modalRef.close();
 }
