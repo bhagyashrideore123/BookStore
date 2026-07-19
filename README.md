@@ -37,6 +37,7 @@ The project focuses on:
 - Minimal HTML with JavaScript-driven content generation
 
 ## 📂 Project Structure
+
 ```
 BOOKSTORE/
 │
