@@ -65,7 +65,7 @@ BOOKSTORE/
 
 ## 🌐 Live Demo
 
-[View the live project here:](https://bhagyashrideore.developerakademie.net/Fotogram/index.html)
+https://bhagyashrideore.developerakademie.net/BookStore/index.html
 
 ## 👩‍💻 Author
 
