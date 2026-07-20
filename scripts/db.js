@@ -1,161 +1,3 @@
-// let books = [
-//     {
-//         name: "Mrityunjay (मृत्युंजय)",
-//         path: "./assets/img/books/mrutunjay.png",
-//         author: "Shivaji Sawant",
-//         likes: 4850,
-//         liked: true,
-//         price: "25.00€",
-//         publishedYear: 1967,
-//         genre: "Historical Fiction",
-//         comments: [
-//             {
-//                 name: "MarathiReader_99",
-//                 comment:
-//                     "An absolute masterpiece. The way Karna's perspective and pain are portrayed is unparalleled.",
-//             },
-//             {
-//                 name: "BookLoverPune",
-//                 comment:
-//                     "Shivaji Sawant's writing style keeps you hooked from the very first page. A must-read classic!",
-//             },
-//             {
-//                 name: "BookLoverPune",
-//                 comment:
-//                     "Shivaji Sawant's writing style keeps you hooked from the very first page. A must-read classic!",
-//             },
-//             {
-//                 name: "BookLoverPune",
-//                 comment:
-//                     "Shivaji Sawant's writing style keeps you hooked from the very first page. A must-read classic!",
-//             }
-//         ],
-//     },
-//     {
-//         name: "Yayati (ययाति)",
-//         path: "./assets/img/books/yayati.png",
-//         author: "V. S. Khandekar",
-//         likes: 4200,
-//         liked: false,
-//         price: "18.50€",
-//         publishedYear: 1959,
-//         genre: "Philosophical Fiction",
-//         comments: [
-//             {
-//                 name: "SahityaPremi",
-//                 comment:
-//                     "Deservedly won the Jnanpith Award. It's a deep dive into human greed, desire, and spirituality.",
-//             },
-//         ],
-//     },
-//     {
-//         name: "Kosla (कोसला)",
-//         path: "./assets/img/books/kosla.png",
-//         author: "Bhalchandra Nemade",
-//         likes: 3100,
-//         liked: true,
-//         price: "12.00€",
-//         publishedYear: 1963,
-//         genre: "Existential Novel",
-//         comments: [
-//             {
-//                 name: "Chaitanya_K",
-//                 comment:
-//                     "Pandurang Sangvikar's existential crisis is so raw and ahead of its time. Changed Marathi literature forever.",
-//             },
-//         ],
-//     },
-//     {
-//         name: "Batatyachi Chal (बटाट्याची चाळ)",
-//         path: "./assets/img/books/batatyachi_chal.png",
-//         author: "P. L. Deshpande (Pu. La.)",
-//         likes: 5600,
-//         liked: true,
-//         price: "15.00€",
-//         publishedYear: 1958,
-//         genre: "Humor / Satire",
-//         comments: [
-//             {
-//                 name: "PuLa_Fan",
-//                 comment:
-//                     "Pure nostalgia and brilliant humor. Pu. La. Deshpande's observational comedy is timeless!",
-//             },
-//             {
-//                 name: "Mumbaikar_Read",
-//                 comment:
-//                     "Hilarious portrayal of chawl life in Mumbai. I laughed out loud so many times.",
-//             },
-//         ],
-//     },
-//     {
-//         name: "Shyamchi Aai (श्यामची आई)",
-//         path: "./assets/img/books/shyamchi_aai.png",
-//         author: "Sane Guruji",
-//         likes: 6200,
-//         liked: true,
-//         price: "8.50€",
-//         publishedYear: 1953,
-//         genre: "Drama / Biography",
-//         comments: [
-//             {
-//                 name: "SanskarKatha",
-//                 comment:
-//                     "Every child and parent should read this. Beautiful, moving stories about a mother's teachings.",
-//             },
-//         ],
-//     },
-//     {
-//         name: "Natsamrat (नटसम्राट)",
-//         path: "./assets/img/books/natsamrat.png",
-//         author: "V. V. Shirwadkar (Kusumagraj)",
-//         likes: 3900,
-//         liked: false,
-//         price: "10.99€",
-//         publishedYear: 1970,
-//         genre: "Tragedy Drama",
-//         comments: [
-//             {
-//                 name: "TheatreGeek",
-//                 comment:
-//                     "The dialogues are poetic and powerful. It perfectly captures the tragic downfall of a great actor."
-//             }
-//         ]
-//     },
-//     {
-//         name: "Duniyadari (दुनियादारी)",
-//         path: "./assets/img/books/duniyadari.png",
-//         author: "Suhas Shirvalkar",
-//         likes: 2800,
-//         liked: false,
-//         price: "14.00€",
-//         publishedYear: 1980,
-//         genre: "Drama / Romance",
-//         comments: [
-//             {
-//                 name: "CollegeDays",
-//                 comment:
-//                     "A fantastic story about friendship, love, and college life that resonates across generations.",
-//             },
-//         ],
-//     },
-//     {
-//         name: "Musafir (मुसाफिर)",
-//         path: "./assets/img/books/musafir.png",
-//         author: "Achyut Godbole",
-//         likes: 3400,
-//         liked: true,
-//         price: "16.50€",
-//         publishedYear: 2011,
-//         genre: "Autobiography",
-//         comments: [
-//             {
-//                 name: "InspireMe",
-//                 comment:
-//                     "Incredibly inspiring journey of struggle, resilience, and ultimate success. Highly recommended.",
-//             },
-//         ],
-//     }
-// ];
 let books = [
     {
         id: 1,
@@ -174,14 +16,14 @@ let books = [
             {
                 name: "ParentJoy",
                 comment:
-                    "My 8-year-old couldn't put this down! Highly recommend for young adventurers.",
+                    "My 8-year-old couldn't put this down! Highly recommend for young adventurers."
             },
             {
                 name: "BookwormKid",
                 comment:
-                    "The talking squirrel was my absolute favorite character!",
-            },
-        ],
+                    "The talking squirrel was my absolute favorite character!"
+            }
+        ]
     },
     {
         id: 2,
@@ -200,9 +42,9 @@ let books = [
             {
                 name: "KinderTeacher",
                 comment:
-                    "Perfect for preschool classrooms. Teaches a lovely lesson about being yourself.",
-            },
-        ],
+                    "Perfect for preschool classrooms. Teaches a lovely lesson about being yourself."
+            }
+        ]
     },
     {
         id: 3,
@@ -221,9 +63,9 @@ let books = [
             {
                 name: "Rohan_M",
                 comment:
-                    "Classic moral stories that I read as a kid, now reading them to my daughter.",
-            },
-        ],
+                    "Classic moral stories that I read as a kid, now reading them to my daughter."
+            }
+        ]
     },
     {
         id: 4,
@@ -242,9 +84,9 @@ let books = [
             {
                 name: "CuriousMind",
                 comment:
-                    "Makes complex space concepts so easy and visual for kids to understand.",
-            },
-        ],
+                    "Makes complex space concepts so easy and visual for kids to understand."
+            }
+        ]
     },
     {
         id: 5,
@@ -263,9 +105,9 @@ let books = [
             {
                 name: "SleepyTimeParent",
                 comment:
-                    "This has become our go-to book every single night. Very soothing.",
-            },
-        ],
+                    "This has become our go-to book every single night. Very soothing."
+            }
+        ]
     },
     {
         id: 6,
@@ -284,9 +126,9 @@ let books = [
             {
                 name: "SuperSleuth",
                 comment:
-                    "Interactive and fun! Trying to solve the puzzle before the end was great.",
-            },
-        ],
+                    "Interactive and fun! Trying to solve the puzzle before the end was great."
+            }
+        ]
     },
     {
         id: 7,
@@ -305,9 +147,9 @@ let books = [
             {
                 name: "STEM_Mom",
                 comment:
-                    "Extremely empowering! A fantastic read for young girls interested in science.",
-            },
-        ],
+                    "Extremely empowering! A fantastic read for young girls interested in science."
+            }
+        ]
     },
     {
         id: 8,
@@ -326,9 +168,9 @@ let books = [
             {
                 name: "DreamyNights",
                 comment:
-                    "The poetic rhythm of the words sends my toddler to sleep instantly.",
-            },
-        ],
+                    "The poetic rhythm of the words sends my toddler to sleep instantly."
+            }
+        ]
     },
     {
         id: 9,
@@ -346,9 +188,9 @@ let books = [
         comments: [
             {
                 name: "ArtTeacher_Lucy",
-                comment: "The colors in this book are so vivid and beautiful!",
-            },
-        ],
+                comment: "The colors in this book are so vivid and beautiful!"
+            }
+        ]
     },
     {
         id: 10,
@@ -367,8 +209,8 @@ let books = [
             {
                 name: "HeritageBooks",
                 comment:
-                    "Timeless fables like 'The Tortoise and the Hare' beautifully translated.",
-            },
-        ],
-    },
+                    "Timeless fables like 'The Tortoise and the Hare' beautifully translated."
+            }
+        ]
+    }
 ];

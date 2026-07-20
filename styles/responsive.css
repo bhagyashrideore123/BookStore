@@ -10,7 +10,7 @@
         height: 40%;
     }
 }
-/* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 480px) {
     .cardStyle{
         flex-direction: column;
@@ -25,9 +25,9 @@
     h2{
         min-height: 60px;
     }
+
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .cardStyle{
         flex-direction: column;
@@ -38,10 +38,15 @@
     }
     h2{
     min-height: 65px;
-}
+    }
+
+    .dialogHeader {
+        .textSize {
+            font-size: 1rem;
+        }
+    }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .bookCard{
         width: 45%;
@@ -49,10 +54,9 @@
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1024px) and (max-width: 1440px)  {
 
-h2{
-    min-height: 113px;
-}
+    h2{
+        min-height: 113px;
+    }
 }

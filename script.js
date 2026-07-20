@@ -60,41 +60,4 @@ function likeTheBook(index) {
     renderBooks();
 }
 
-function openModal(index) {
-    if (index < books.length) {
-        modalRef.innerHTML = renderDialog(index);
-        modalRef.showModal();
-    } else {
-        index = 0;
-        modalRef.innerHTML = renderDialog(index);
-        modalRef.showModal();
-    }
-}
 
-function goForward(index) {
-    if (index >= 0 && index < books.length - 1) {
-        index++;
-        openModal(index);
-    } else {
-        index = 0;
-        openModal(index);
-    }
-}
-
-function gobackward(index) {
-    if (index == 0) {
-        index = books.length - 1;
-        openModal(index);
-    } else {
-        index--;
-        openModal(index);
-    }
-}
-
-function preventEventBubbling(event) {
-    event.stopPropagation();
-}
-
-function closeModal() {
-    modalRef.close();
-}
