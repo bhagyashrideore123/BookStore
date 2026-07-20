@@ -28,8 +28,7 @@ The project focuses on:
 ## ✨ Highlights
 
 - Dynamic book rendering from JavaScript data
-- Browse different books and categories
-- View book information and story summaries in popup dialogs
+- Browse different books
 - Like and dislike books
 - Add and read comments
 - Store user interactions using LocalStorage
