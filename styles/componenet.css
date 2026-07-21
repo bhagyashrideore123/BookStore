@@ -81,8 +81,8 @@ h2{
     font-size: clamp(16px,4dvw,25px);
     text-align: center;
     color: var( --text-color);
-    padding: 30px 10px 0px;
-    min-height: 110px;
+    padding: 0px 10px 0px;
+    min-height: 65px;
 }
 
 h3{

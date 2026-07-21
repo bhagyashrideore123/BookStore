@@ -54,16 +54,16 @@ function bookCardTemplate(i) {
                     </td>
                 </tr>
             </table>
+            <h3 class="commentHeadingStyle">Comments</h3>
             <section class="overflowText">                            
-                <table id="comments_table">
-                <h3 class="commentHeadingStyle">Comments</h3>
+                <table id="comments_table">                
                 ${renderComments(i)}
-                </table>
-                <div class="flexDivRow">
-                    <input id="inputComments-${i}"  class="inputStyle" type="text" placeholder="Write your comments here ...">
-                    <button id="sentComments" onclick="sendComments(${i})"><img class="sentImg" src="./assets/img/sent_icon.svg" alt="sent_button_image"></button>
-                </div>
+                </table>               
             </section> 
+            <div class="flexDivRow">
+                <input id="inputComments-${i}"  class="inputStyle" type="text" placeholder="Write your comments here ...">
+                <button id="sentComments" onclick="sendComments(${i})"><img class="sentImg" src="./assets/img/sent_icon.svg" alt="sent_button_image"></button>
+            </div>
     </div>`;
 }
 
