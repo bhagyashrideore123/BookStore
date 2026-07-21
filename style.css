@@ -46,13 +46,17 @@
 
 }
 
+.txtAlign{
+    text-align: center;
+}
+
 .flexDivRow{
     width: 100%;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .flexstyle{
@@ -72,7 +76,7 @@
 
 .bookImg {
     height: 49%;
-    width: 100%;
+    width: 80%;
     object-fit: contain;
 }
 

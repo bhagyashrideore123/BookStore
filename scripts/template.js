@@ -12,7 +12,7 @@ function bookCardTemplate(i) {
                     <h2>${books[i].name}</h2>
                 </thead>
                 <tr>
-                    <td>
+                    <td class="txtAlign">
                         <img onclick="openModal(${i})" class="bookImg" src=${books[i].path} alt=${books[i].name}>
                     </td>
                 </tr>
@@ -22,9 +22,9 @@ function bookCardTemplate(i) {
                     </td>
                     <td class="priceStyle">
                         <span class="priceStyle">
-                                <p class="boldFont">${books[i].likes}</p>
+                                <p id="likesCount-${i}" class="boldFont">${books[i].likes}</p>
                                 <button onclick="likeTheBook(${i})">
-                                    <img id="likeImg" src=${likeImgPath} alt="status_of_book">
+                                    <img id="likeImg-${i}" src=${likeImgPath} alt="status_of_book">
                                 </button>
                         </span>
                     </td>

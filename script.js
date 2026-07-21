@@ -2,6 +2,7 @@ const user = "me";
 const booksRef = document.getElementById("books");
 const modalRef = document.getElementById("BookModalBox");
 const sentComments = document.getElementById("sentComments");
+const likesRef =  document.getElementById("likesCount");
 
 function renderBooks() {
     booksRef.innerHTML = "";
@@ -49,15 +50,12 @@ function likeTheBook(index) {
     if (books[index].liked == false) {
         books[index].likes = books[index].likes + 1;
         books[index].liked = true;
-        document.getElementById("likeImg").src = "./assets/img/likes.svg";
+        document.getElementById("likeImg-"+index).src = "./assets/img/likes.svg";
     } else {
         books[index].likes = books[index].likes - 1;
         books[index].liked = false;
-        document.getElementById("likeImg").src =
-            "./assets/img/likes_notFilled.svg";
+        document.getElementById("likeImg-"+index).src = "./assets/img/likes_notFilled.svg";
     }
     localStorage.setItem("books", JSON.stringify(books));
-    renderBooks();
+    document.getElementById("likesCount-"+index).innerHTML = books[index].likes;
 }
-
-

@@ -21,6 +21,7 @@
     }
     .bookImg{
         height: 40%;
+        width: 60%;
     }
     h2{
         min-height: 60px;
@@ -31,6 +32,9 @@
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .cardStyle{
         flex-direction: column;
+    }
+    .bookImg{
+        width: 60%;
     }
     .bookCard{
         width: 80%;
