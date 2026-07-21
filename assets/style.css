@@ -46,14 +46,17 @@
 
 }
 
+.txtAlign{
+    text-align: center;
+}
+
 .flexDivRow{
     width: 100%;
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;   
-    padding-bottom: 22px;  
-    margin-top: 20px; 
+    align-items: center;
+    margin-top: 10px;
 }
 
 .flexstyle{
@@ -73,7 +76,7 @@
 
 .bookImg {
     height: 49%;
-    width:70%;
+    width: 80%;
     object-fit: contain;
 }
 
@@ -86,23 +89,13 @@ font-weight: bold;
     width: 30px
 }
 
-.sendComment{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
 .inputStyle {
     border: none;
     appearance: none;
     padding: 8px;
-    color: var(--assets-color);
+    color: var(--text-color);
     border-bottom: 2px solid var(--assets-color);
     flex: 1;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 .inputStyle::placeholder {
@@ -127,10 +120,6 @@ font-weight: bold;
 .overflowText {
     overflow: auto;
     scrollbar-width: thin;
-}
-
-.txtAlign{
-    text-align: center;
 }
 
 .logo {

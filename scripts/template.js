@@ -62,7 +62,7 @@ function bookCardTemplate(i) {
             </section> 
             <div class="flexDivRow">
                 <input id="inputComments-${i}"  class="inputStyle" type="text" placeholder="Write your comments here ...">
-                <button id="sentComments" onclick="sendComments(${i})"><img class="sentImg" src="./assets/img/sent_icon.svg" alt="sent_button_image"></button>
+                <button id="sentComments" class="sendComment" onclick="sendComments(${i})"><img class="sentImg" src="./assets/img/sent_icon.svg" alt="sent_button_image"></button>
             </div>
     </div>`;
 }

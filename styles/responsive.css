@@ -21,10 +21,10 @@
     }
     .bookImg{
         height: 40%;
-        width: 60%;
+        width: 50%;
     }
     h2{
-        min-height: 60px;
+        min-height: 35px;
     }
 
 }
